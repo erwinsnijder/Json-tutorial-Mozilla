@@ -32,15 +32,15 @@
         populateHeader (superHeroes);
         showHeroes(superHeroes);
     }
-        function populateHeader(jsonObj) {
-            var myh1 = document.createElement('h1');
-            myh1.textContent = jsonObj['squadName'];
-            header.appendChild(myh1);
+    function populateHeader(jsonObj) {
+  var myH1 = document.createElement('h1');
+  myH1.textContent = jsonObj['squadName'];
+  header.appendChild(myH1);
 
-            var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['HomeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);;
-    }
+  var myPara = document.createElement('p');
+  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+  header.appendChild(myPara);
+}
     function showHeroes(jsonObj) {
   var heroes = jsonObj['members'];
       
